@@ -56,3 +56,31 @@ img {
 .main-nav i:last-of-type {
   margin: 1.5rem;
 }
+
+.header-top {
+  align-items: flex-end;
+  border-bottom: 1px solid #f0ecec;
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+  padding-top: 2rem;
+}
+
+.header-top div:last-of-type {
+  text-align: end;
+}
+
+.header-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.8rem;
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: black;
+}
