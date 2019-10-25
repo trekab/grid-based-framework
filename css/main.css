@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 body {
@@ -11,4 +12,47 @@ body {
 
 img {
   width: 100%;
+}
+
+.main-nav {
+  height: 2.8rem;
+  border-bottom: 1px solid black;
+  align-items: baseline;
+  align-content: center;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-size: 0.65rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav__links li {
+  padding: 3px;
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: black;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__btn {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.main-nav i:last-of-type {
+  margin: 1.5rem;
 }
