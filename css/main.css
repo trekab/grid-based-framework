@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 1px;
+}
+
+body {
+  max-width: 1195px;
+  margin: auto;
+  font-family: 'Delius', cursive;
+}
+
+img {
+  width: 100%;
+}
