@@ -8,1720 +8,251 @@
   <link href="https://fonts.googleapis.com/css?family=Delius&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/main.css">
-  <title>My Grid Test</title>
+  <title>Airbnb</title>
 </head>
 <body>
-  <nav class="row main-nav">
-    <div class="col-4">
-        <i class="fa fa-navicon"></i>
-        <i class="fa fa-search"></i>
-    </div>
-    <div class="col-4">
-      <ul class="nav__links">
-        <li>
-          <a href="#">English</a>
-        </li>
-        <li>
-          <a href="#">Español</a>
-        </li>
-        <li>
-          <a href="#">中文</a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-4 login-btn">
-      <button class="nav__btn">Log In</button>
-    </div>
-  </nav>
-  <header>
-    <div class="row header-top">
-      <div class="col-4">
-          Thursday, October 24, 2019 
+  <div class="page-header">
+    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:32px;width:32px;display:block;fill:#ffffff"><path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z"></path></svg>
+
+    <div class="container">
+      <h1>
+        <span>Book a trip. Host travelers. All on Airbnb.</span>
+      </h1>
+      <div>
+        <span>Find places to stay and things to do</span>
+        <span>Earn money from your extra space</span>
       </div>
-      <div class="col-4">
-        <svg xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 184 25" fill="#000"><path d="M13.8 2.9c0-2-1.9-2.5-3.4-2.5v.3c.9 0 1.6.3 1.6 1 0 .4-.3 1-1.2 1-.7 0-2.2-.4-3.3-.8C6.2 1.4 5 1 4 1 2 1 .6 2.5.6 4.2c0 1.5 1.1 2 1.5 2.2l.1-.2c-.2-.2-.5-.4-.5-1 0-.4.4-1.1 1.4-1.1.9 0 2.1.4 3.7.9 1.4.4 2.9.7 3.7.8v3.1L9 10.2v.1l1.5 1.3v4.3c-.8.5-1.7.6-2.5.6-1.5 0-2.8-.4-3.9-1.6l4.1-2V6l-5 2.2C3.6 6.9 4.7 6 5.8 5.4l-.1-.3c-3 .8-5.7 3.6-5.7 7 0 4 3.3 7 7 7 4 0 6.6-3.2 6.6-6.5h-.2c-.6 1.3-1.5 2.5-2.6 3.1v-4.1l1.6-1.3v-.1l-1.6-1.3V5.8c1.5 0 3-1 3-2.9zm-8.7 11l-1.2.6c-.7-.9-1.1-2.1-1.1-3.8 0-.7 0-1.5.2-2.1l2.1-.9v6.2zm10.6 2.3l-1.3 1 .2.2.6-.5 2.2 2 3-2-.1-.2-.8.5-1-1V9.4l.8-.6 1.7 1.4v6.1c0 3.8-.8 4.4-2.5 5v.3c2.8.1 5.4-.8 5.4-5.7V9.3l.9-.7-.2-.2-.8.6-2.5-2.1L18.5 9V.8h-.2l-3.5 2.4v.2c.4.2 1 .4 1 1.5l-.1 11.3zM34 15.1L31.5 17 29 15v-1.2l4.7-3.2v-.1l-2.4-3.6-5.2 2.8v6.6l-1 .8.2.2.9-.7 3.4 2.5 4.5-3.6-.1-.4zm-5-1.7V8.5l.2-.1 2.2 3.5-2.4 1.5zM53.1 2c0-.3-.1-.6-.2-.9h-.2c-.3.8-.7 1.2-1.7 1.2-.9 0-1.5-.5-1.9-.9l-2.9 3.3.2.2 1-.9c.6.5 1.1.9 2.5 1v8.3L44 3.2c-.5-.8-1.2-1.9-2.6-1.9-1.6 0-3 1.4-2.8 3.6h.3c.1-.6.4-1.3 1.1-1.3.5 0 1 .5 1.3 1v3.3c-1.8 0-3 .8-3 2.3 0 .8.4 2 1.6 2.3v-.2c-.2-.2-.3-.4-.3-.7 0-.5.4-.9 1.1-.9h.5v4.2c-2.1 0-3.8 1.2-3.8 3.2 0 1.9 1.6 2.8 3.4 2.7v-.2c-1.1-.1-1.6-.6-1.6-1.3 0-.9.6-1.3 1.4-1.3.8 0 1.5.5 2 1.1l2.9-3.2-.2-.2-.7.8c-1.1-1-1.7-1.3-3-1.5V5l8 14h.6V5c1.5-.1 2.9-1.3 2.9-3zm7.3 13.1L57.9 17l-2.5-2v-1.2l4.7-3.2v-.1l-2.4-3.6-5.2 2.8v6.6l-1 .8.2.2.9-.7 3.4 2.5 4.5-3.6-.1-.4zm-5-1.7V8.5l.2-.1 2.2 3.5-2.4 1.5zM76.7 8l-.7.5-1.9-1.6-2.2 2 .9.9v7.5l-2.4-1.5V9.6l.8-.5-2.3-2.2-2.2 2 .9.9V17l-.3.2-2.1-1.5v-6c0-1.4-.7-1.8-1.5-2.3-.7-.5-1.1-.8-1.1-1.5 0-.6.6-.9.9-1.1v-.2c-.8 0-2.9.8-2.9 2.7 0 1 .5 1.4 1 1.9s1 .9 1 1.8v5.8l-1.1.8.2.2 1-.8 2.3 2 2.5-1.7 2.8 1.7 5.3-3.1V9.2l1.3-1-.2-.2zm18.6-5.5l-1 .9-2.2-2-3.3 2.4V1.6h-.3l.1 16.2c-.3 0-1.2-.2-1.9-.4l-.2-13.5c0-1-.7-2.4-2.5-2.4s-3 1.4-3 2.8h.3c.1-.6.4-1.1 1-1.1s1.1.4 1.1 1.7v3.9c-1.8.1-2.9 1.1-2.9 2.4 0 .8.4 2 1.6 2V13c-.4-.2-.5-.5-.5-.7 0-.6.5-.8 1.3-.8h.4v6.2c-1.5.5-2.1 1.6-2.1 2.8 0 1.7 1.3 2.9 3.3 2.9 1.4 0 2.6-.2 3.8-.5 1-.2 2.3-.5 2.9-.5.8 0 1.1.4 1.1.9 0 .7-.3 1-.7 1.1v.2c1.6-.3 2.6-1.3 2.6-2.8s-1.5-2.4-3.1-2.4c-.8 0-2.5.3-3.7.5-1.4.3-2.8.5-3.2.5-.7 0-1.5-.3-1.5-1.3 0-.8.7-1.5 2.4-1.5.9 0 2 .1 3.1.4 1.2.3 2.3.6 3.3.6 1.5 0 2.8-.5 2.8-2.6V3.7l1.2-1-.2-.2zm-4.1 6.1c-.3.3-.7.6-1.2.6s-1-.3-1.2-.6V4.2l1-.7 1.4 1.3v3.8zm0 3c-.2-.2-.7-.5-1.2-.5s-1 .3-1.2.5V9c.2.2.7.5 1.2.5s1-.3 1.2-.5v2.6zm0 4.7c0 .8-.5 1.6-1.6 1.6h-.8V12c.2-.2.7-.5 1.2-.5s.9.3 1.2.5v4.3zm13.7-7.1l-3.2-2.3-4.9 2.8v6.5l-1 .8.1.2.8-.6 3.2 2.4 5-3V9.2zm-5.4 6.3V8.3l2.5 1.8v7.1l-2.5-1.7zm14.9-8.4h-.2c-.3.2-.6.4-.9.4-.4 0-.9-.2-1.1-.5h-.2l-1.7 1.9-1.7-1.9-3 2 .1.2.8-.5 1 1.1v6.3l-1.3 1 .2.2.6-.5 2.4 2 3.1-2.1-.1-.2-.9.5-1.2-1V9c.5.5 1.1 1 1.8 1 1.4.1 2.2-1.3 2.3-2.9zm12 9.6L123 19l-4.6-7 3.3-5.1h.2c.4.4 1 .8 1.7.8s1.2-.4 1.5-.8h.2c-.1 2-1.5 3.2-2.5 3.2s-1.5-.5-2.1-.8l-.3.5 5 7.4 1-.6v.1zm-11-.5l-1.3 1 .2.2.6-.5 2.2 2 3-2-.2-.2-.8.5-1-1V.8h-.1l-3.6 2.4v.2c.4.2 1 .3 1 1.5v11.3zM143 2.9c0-2-1.9-2.5-3.4-2.5v.3c.9 0 1.6.3 1.6 1 0 .4-.3 1-1.2 1-.7 0-2.2-.4-3.3-.8-1.3-.4-2.5-.8-3.5-.8-2 0-3.4 1.5-3.4 3.2 0 1.5 1.1 2 1.5 2.2l.1-.2c-.3-.2-.6-.4-.6-1 0-.4.4-1.1 1.4-1.1.9 0 2.1.4 3.7.9 1.4.4 2.9.7 3.7.8V9l-1.5 1.3v.1l1.5 1.3V16c-.8.5-1.7.6-2.5.6-1.5 0-2.8-.4-3.9-1.6l4.1-2V6l-5 2.2c.5-1.3 1.6-2.2 2.6-2.9l-.1-.2c-3 .8-5.7 3.5-5.7 6.9 0 4 3.3 7 7 7 4 0 6.6-3.2 6.6-6.5h-.2c-.6 1.3-1.5 2.5-2.6 3.1v-4.1l1.6-1.3v-.1L140 8.8v-3c1.5 0 3-1 3-2.9zm-8.7 11l-1.2.6c-.7-.9-1.1-2.1-1.1-3.8 0-.7.1-1.5.3-2.1l2.1-.9-.1 6.2zm12.2-12h-.1l-2 1.7v.1l1.7 1.9h.2l2-1.7v-.1l-1.8-1.9zm3 14.8l-.8.5-1-1V9.3l1-.7-.2-.2-.7.6-1.8-2.1-2.9 2 .2.3.7-.5.9 1.1v6.5l-1.3 1 .1.2.7-.5 2.2 2 3-2-.1-.3zm16.7-.1l-.7.5-1.1-1V9.3l1-.8-.2-.2-.8.7-2.3-2.1-3 2.1-2.3-2.1L154 9l-1.8-2.1-2.9 2 .1.3.7-.5 1 1.1v6.5l-.8.8 2.3 1.9 2.2-2-.9-.9V9.3l.9-.6 1.5 1.4v6l-.8.8 2.3 1.9 2.2-2-.9-.9V9.3l.8-.5 1.6 1.4v6l-.7.7 2.3 2.1 3.1-2.1v-.3zm8.7-1.5l-2.5 1.9-2.5-2v-1.2l4.7-3.2v-.1l-2.4-3.6-5.2 2.8v6.8l3.5 2.5 4.5-3.6-.1-.3zm-5-1.7V8.5l.2-.1 2.2 3.5-2.4 1.5zm14.1-.9l-1.9-1.5c1.3-1.1 1.8-2.6 1.8-3.6v-.6h-.2c-.2.5-.6 1-1.4 1-.8 0-1.3-.4-1.8-1L176 9.3v3.6l1.7 1.3c-1.7 1.5-2 2.5-2 3.3 0 1 .5 1.7 1.3 2l.1-.2c-.2-.2-.4-.3-.4-.8 0-.3.4-.8 1.2-.8 1 0 1.6.7 1.9 1l4.3-2.6v-3.6h-.1zm-1.1-3c-.7 1.2-2.2 2.4-3.1 3l-1.1-.9V8.1c.4 1 1.5 1.8 2.6 1.8.7 0 1.1-.1 1.6-.4zm-1.7 8c-.5-1.1-1.7-1.9-2.9-1.9-.3 0-1.1 0-1.9.5.5-.8 1.8-2.2 3.5-3.2l1.2 1 .1 3.6z"></path></svg>
+      <div>
+        <button>Explore</button><button>Host</button>
       </div>
-      <div class="col-4">
-        Today's Paper
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <ul class="header-nav">
-          <li>
-            <a href="#">World</a>
-          </li>
-          <li>
-            <a href="#">U.S.</a>
-          </li>
-          <li>
-            <a href="#">Politics</a>
-          </li>
-          <li>
-            <a href="#">N.Y.</a>
-          </li>
-          <li>
-            <a href="#">Business</a>
-          </li>
-          <li>
-            <a href="#">Opinion</a>
-          </li>
-          <li>
-            <a href="#">Tech</a>
-          </li>
-          <li>
-            <a href="#">Science</a>
-          </li>
-          <li>
-            <a href="#">Health</a>
-          </li>
-          <li>
-            <a href="#">Sports</a>
-          </li>
-          <li>
-            <a href="#">Arts</a>
-          </li>
-          <li>
-            <a href="#">Books</a>
-          </li>
-          <li>
-            <a href="#">Style</a>
-          </li>
-          <li>
-            <a href="#">Food</a>
-          </li>
-          <li>
-            <a href="#">Travel</a>
-          </li>
-          <li>
-            <a href="#">Magazine</a>
-          </li>
-          <li>
-            <a href="#">T Magazine</a>
-          </li>
-          <li>
-            <a href="#">Real Estate</a>
-          </li>
-          <li>
-            <a href="#">Video</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <div class="row">
-    <div class="col-12">
-      <hr>
     </div>
   </div>
-  <main>
-    <div class="row">
-      <div class="col-3">
-        <div class="row">
-          <div class="col-2">
-            <img src="https://static01.nyt.com/images/2017/01/29/podcasts/the-daily-album-art/the-daily-album-art-square320-v4.png" alt="album">
-          </div>
-          <div class="col-10">
-            <h2>Listen to ‘The Daily’</h2>
-            <p>A victim of the shadow government.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="row">
-          <div class="col-2">
-            <img src="https://static01.nyt.com/images/2019/10/23/multimedia/23-parenting-newsletter-infertility/23-parenting-newsletter-infertility-square640-v2.jpg?quality=75&auto=webp&disable=upscale&width=350" alt="album">
-          </div>
-          <div class="col-10">
-            <h2>In the ‘NYT Parenting’ Newsletter</h2>
-            <p>The lasting trauma of infertility.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="row">
-          <div class="col-2">
-            <img src="https://static01.nyt.com/images/2018/03/27/books/book-review-album-art-v2/book-review-album-art-v2-square320.jpg" alt="album">
-          </div>
-          <div class="col-10">
-            <h2>The Book Review Podcast</h2>
-            <p>“Self-Portrait in Black and White” and “Poisoner in Chief.”</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="row">
-          <div class="col-6">
-            <div class="row">
-              <div class="col-6">
-                <span>S&P 500</span>
-              </div>
-              <div class="col-6">
-                <span>+0.28%</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <span>S&P 500</span>
-              </div>
-              <div class="col-6">
-                <span>+0.28%</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <span>S&P 500</span>
-              </div>
-              <div class="col-6">
-                <span>+0.28%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-          <hr>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-          <hr>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-8">
-        <div class="row">
-          <div class="col-6">
-            <h2>
-                Trump’s War on the ‘Deep State’ Turns Against Him
-            </h2>
-            <ul>
-              <li>
-                The impeachment inquiry is in some ways the culmination of a battle between President Trump and the institutions he distrusted.
-              </li>
-              <li>
-                If Mr. Trump is impeached, it will be in part because of the testimony by some of the same career professionals he has derided.
-              </li>
-            </ul>
-            <span>7m ago</span>
-            <span>497 comments</span>
-          </div>
-          <div class="col-6">
-            <h2>
-              House Republicans disrupted the impeachment inquiry as evidence mounted against Mr. Trump.
-            </h2>
-            <span>8h ago</span>
-            <span>2671 comments</span>
-            <div class="row">
-              <div class="col-12">
-                <hr>
-              </div>
-            </div>
-            <h2>
-              In Steve Bannon’s Basement, a Rogue ‘War Room’ to Fight Impeachment
-            </h2>
-            <p>
-              A new radio show featuring Mr. Bannon and some Trump loyalists aims to add to the messaging in defense of the president.
-            </p>
-            <span>12h ago</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-9">
-            <div class="row">
-              <div class="col-6">
-                <h2>
-                  Behind an Impeachment Inquiry, a Forgotten War
-                </h2>
-                <p>
-                  As President Trump froze military aid to Ukraine and urged it to investigate his rivals, the country was struggling in a bare-bones fight against Russian-backed separatists.
-                </p>
-                <span>8m ago</span>
-              </div>
-              <div class="col-6">
-                <figure>
-                  <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1/merlin_162966096_12f0c38e-ac9e-4e0b-80ef-246fd39efdd1-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale" alt="image">
-                  <figcaption>
-                      Soldiers digging fresh trenches and bunkers after recently withdrawing about 500 yards from their previous position in Stanytsia Luhanska.
-                      <span>Brendan Hoffman for The New York Times</span>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <h2>
-              Ukrainian officials knew about the aid freeze before it became public, undermining a Trump defense.
-            </h2>
-            <span>10h ago</span><span>944 comments</span>
-            <hr>
-            <h2>
-                White House aides feared that Mr. Trump had another Ukraine back channel.
-            </h2>
-            <span>Oct. 23</span>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-3">
-            <h2>
-              What Will Happen to the Wives and Children of ISIS Fighters?
-            </h2>
-            <p>
-              At the Al Hol refugee camp in northeastern Syria, some wives of ISIS fighters eagerly awaited the return of the caliphate, while others said ISIS ruined their lives.
-            </p>
-            <span>1h ago</span> 
-          </div>
-          <div class="col-9">
-            <video src=""></video>
-            <section>
-              We traveled to Al Hol camp in northeast Syria to meet wives of ISIS fighters held there. With fewer Kurdish-led forces guarding the camp because of the U.S. withdrawal and the Turkish invasion, the question of what will happen to these women and their children becomes more pressing than ever.
-              <span>Yousur Al-Hlou/The New York Times</span>
-            </section>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-7">
-            <h2>
-              The Student Vote Is Surging. So Are Efforts to Suppress It.
-            </h2>
-            <p>
-              The share of college students casting ballots doubled from 2014 to 2018, a potential boon to Democrats. But in Texas and elsewhere, Republicans are erecting roadblocks to the polls.
-            </p>
-            <span>3h ago</span><span>48 comments</span>
-          </div>
-          <div class="col-5">
-            <h2>
-              Early Voting Is Set to Start in New York. What Could Go Wrong?
-            </h2>
-            <p>
-              Think of the perils of an Election Day: broken voting machines, endless lines, frantic calls to extend voting hours. Now, imagine nine days of that.
-            </p>
-            <span>30m ago</span>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-5">
-            <h2>
-              Why Protests Are Flaring Up Across the Globe
-            </h2>
-            <p>
-              An increase on subway fares. A tax on WhatsApp calls. The price of onions. Pocketbook items are driving what has been a steady drumbeat of unrest.
-            </p>
-            <span>Oct. 23</span>
-            <span>147 comments</span>
-          </div>
-          <div class="col-7">
-            <div class="row">
-              <div class="col-8">
-                <img src="https://static01.nyt.com/images/2019/10/22/world/22protests-global/22protests-global-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale" alt="image">
-              </div>
-              <div class="col-4">
-                <section>
-                  Protesters in Santiago, Chile, on Tuesday. Demonstrations over increased subway fares devolved into deadly violence. <span>Tomas Munita for The New York Times</span>
-                </section>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-6">
-            <h2>
-              De Niro and Pacino Have Always Connected. Just Rarely Onscreen.
-            </h2>
-            <p>
-              “The Irishman” is officially only the third time they’ve collaborated, but over the years they often turned to one another. Who else could understand?
-            </p>
-            <span>3h ago</span>
-          </div>
-          <div class="col-6">
-            <figure>
-              <img src="https://static01.nyt.com/images/2019/10/27/arts/27DENIRO-PACINO1/27DENIRO-PACINO1-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale" alt="image">
-              <figcaption>
-                <section>
-                  As each grew famous for intense, immersive work, “it was a good thing that we had each other to talk about stuff,” De Niro says.
-                  <span>Philip Montgomery for The New York Times</span>
-                </section>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <h3>
-          Opinion <i class="fa fa-angle-right"></i>
-        </h3>
-        <div class="row">
-          <div class="col-6">
-            <div>
-              <div>
-                  The Editorial Board
-                </div>
-                <h2>
-                  Why Did Republicans Storm the Capitol? They’re Running Out of Options
-                </h2>
-            </div>
-            <p>
-              As more testimony is disclosed, it becomes clearer that President Trump’s only defense against impeachment is to distract from the facts.
-            </p>
-            <span>14m ago</span>
-            <span>475 comments</span>
-          </div>
-          <div class="col-6">
-            <img src="https://static01.nyt.com/images/2019/10/24/opinion/23gopWeb/23gopWeb-square640.jpg?quality=75&auto=webp&disable=upscale&width=350" alt="image">
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-6">
-            <div>
-              <div>Artur Levitt</div>
-              <h2>
-                What Is Happening at This Agency Should Alarm Everyone
-              </h2>
-            </div>
-            <p>
-            The Public Company Accounting Oversight Board thrives on its independence. The Trump administration is eroding it, says the former S.E.C. chairman.
-            </p>
-            <span>5h ago</span>
-            <span>37 comments</span>
-            <hr>
-            <div>
-              <img src="https://static01.nyt.com/images/2018/04/02/opinion/linda-greenhouse/linda-greenhouse-thumbLarge.png?quality=75&auto=webp&disable=upscale" alt="headshot photo">
-            </div>
-            <div>
-              <div>Linda Greenhouse</div>
-              <h2>
-              Will the Supreme Court Stand Up for a Mexican Teenager Shot by a Border Agent?
-              </h2>
-            </div>
-            <hr>
-            <div>
-              <div>Carine Hines</div>
-              <h2>What Does It Mean to Lose Power on a Farm?</h2>
-            </div>
-            <hr>
-            <div>
-              <img src="https://static01.nyt.com/images/2018/04/03/opinion/gail-collins/gail-collins-thumbLarge.png?quality=75&auto=webp&disable=upscale" alt="headshot photo">
-              <div>
-                <div>Gail Collins</div>
-                <h2>Pick Trump’s Worst Cabinet Member</h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div>
-              <div>Abdullah Shihipar</div>
-              <h2>Data for the Public Good</h2>
-            </div>
-            <hr>
-            <div>
-              <img src="https://static01.nyt.com/images/2018/04/02/opinion/charles-m-blow/charles-m-blow-thumbLarge.png?quality=75&auto=webp&disable=upscale" alt="headshot photo">
-            </div>
-            <div>
-              <div>Charles M. Blow</div>
-              <h2>Donald Trump, Life of a Zombie Party</h2>
-            </div>
-            <hr>
-            <div>
-              <img src="https://static01.nyt.com/images/2017/08/27/insider/bretstephens/bretstephens-thumbLarge-v6.png?quality=75&auto=webp&disable=upscale" alt="headshot photo">
-              <div>
-                <div>Bret Stephens</div>
-                <h2>Will Democrats Become Born-Again Neocons?</h2>
-              </div>
-            </div>
-            <hr>
-            <div>
-              <img src="https://static01.nyt.com/images/2017/08/27/insider/bretstephens/bretstephens-thumbLarge-v6.png?quality=75&auto=webp&disable=upscale" alt="headshot photo">
-              <div>
-                <div>Bret Stephens</div>
-                <h2>Will Democrats Become Born-Again Neocons?</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <hr>
-        <h3>Editors’ Picks</h3>
-        <h2>When the Urge to Write Is a Life Sentence</h2>
-        <div class="row">
-          <div class="col-6">
-            <p>
-              The Turkish author Ahmet Altan has been imprisoned for life. Our reporter, who is being treated for a brain tumor, feels a special sort of empathy with him.
-            </p>
-            <div>
-              <span>Books</span>
-              <span>7h ago</span>
-            </div>
-          </div>
-          <div class="col-6">
-            <div>
-              <img src="https://static01.nyt.com/images/2019/10/24/books/24ALTAN1/24ALTAN1-square640-v2.jpg?quality=75&auto=webp&disable=upscale&width=350" alt="image">
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-6">
-            <p>
-              The Turkish author Ahmet Altan has been imprisoned for life. Our reporter, who is being treated for a brain tumor, feels a special sort of empathy with him.
-            </p>
-            <div>
-              <span>Books</span>
-              <span>7h ago</span>
-            </div>
-          </div>
-          <div class="col-6">
-            <div>
-              <img src="https://static01.nyt.com/images/2019/10/24/books/24ALTAN1/24ALTAN1-square640-v2.jpg?quality=75&auto=webp&disable=upscale&width=350" alt="image">
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-6">
-            <p>
-              The Turkish author Ahmet Altan has been imprisoned for life. Our reporter, who is being treated for a brain tumor, feels a special sort of empathy with him.
-            </p>
-            <div>
-              <span>Books</span>
-              <span>7h ago</span>
-            </div>
-          </div>
-          <div class="col-6">
-            <div>
-              <img src="https://static01.nyt.com/images/2019/10/24/books/24ALTAN1/24ALTAN1-square640-v2.jpg?quality=75&auto=webp&disable=upscale&width=350" alt="image">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <hr>
-    <h3>In Other News</h3>
-    <div class="row">
-      <div class="col-10">
-        <div class="row">
-          <div class="col-6">
-            <div>
-              <img src="https://static01.nyt.com/images/2019/10/23/world/xxruss-crackdown1/xxruss-crackdown1-threeByTwoMediumAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=1100" alt="image">
-            </div>
-            <div>
-              <h2>As Putin Era Begins to Wane, Russia Unleashes a Crackdown</h2>
-            </div>
-            <p>A wave of arrests against journalists, opposition activists, doctors and religious believers raises a question: Is this a police state in the making?</p>
-            <div>
-              <span>Europe</span>
-              <span>11h</span>
-              <span>54 comments</span>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="row">
-              <div class="col-6">
-                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aliquam veniam, ea suscipit animi esse quaerat illum magni et maxime, in laborum vero consequatur, modi tenetur error perferendis accusamus explicabo?</p>
-                <div>
-                  <span>lorem</span>
-                  <span>2h ago</span>
-                </div>
-              </div>
-              <div class="col-6">
-                <img src="https://static01.nyt.com/images/2019/10/25/sports/24nba-rocketsowner1/merlin_162993657_9127e1b9-240d-41ff-8ae4-dfe81712e508-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-              </div>
-            </div>
-            <hr>
-            <div class="row">
-              <div class="col-6">
-                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aliquam veniam, ea suscipit animi esse quaerat illum magni et maxime, in laborum vero consequatur, modi tenetur error perferendis accusamus explicabo?</p>
-                <div>
-                  <span>lorem</span>
-                  <span>2h ago</span>
-                </div>
-              </div>
-              <div class="col-6">
-                <img src="https://static01.nyt.com/images/2019/10/25/sports/24nba-rocketsowner1/merlin_162993657_9127e1b9-240d-41ff-8ae4-dfe81712e508-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-              </div>
-            </div>
-            <hr>
-            <div class="row">
-              <div class="col-6">
-                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aliquam veniam, ea suscipit animi esse quaerat illum magni et maxime, in laborum vero consequatur, modi tenetur error perferendis accusamus explicabo?</p>
-                <div>
-                  <span>lorem</span>
-                  <span>2h ago</span>
-                </div>
-              </div>
-              <div class="col-6">
-                <img src="https://static01.nyt.com/images/2019/10/25/sports/24nba-rocketsowner1/merlin_162993657_9127e1b9-240d-41ff-8ae4-dfe81712e508-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-2">
-        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
-        <hr>
-        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
-        <hr>
-        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
-        <hr>
-        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
-        <hr>
-        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
-      </div>
-    </div>
-    <hr>
-    <hr>
-    <h3>Smarter Living <i class="fa fa-angle-right"></i></h3>
-    <div class="row">
-      <div class="col-3">
-        <img src="https://static01.nyt.com/images/2019/10/17/smarter-living/00wc-tinykitchen/00wc-tinykitchen-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+  <div class="container">
+    <h2>Book unique homes and experiences</h2>
+    <form action="">
+      <label for="where">WHERE</label>
+      <input type="text" placeholder="Anywhere" id="where">
+      <label for="checkin">CHECK-IN</label>
+      <input type="date" id="checkin">
+      <label for="checkout">CHECK-OUT</label>
+      <input type="date" id="checkout">
+      <label for="guests">GUESTS</label>
+      <select name="guests" id="guests">
+        <option value="one">1 guest</option>
+        <option value="two">2 guests</option>
+        <option value="three">3 guests</option>
+      </select>
+      <input type="submit" value="Search">
+    </form>
+    <h2>What guests are saying about homes in the United States</h2>
+    <span>
+      <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:24px;width:24px;fill:#FFB400"><path d="m21.95 9.48a.84.84 0 0 0 -.87-.48h-4.62a.5.5 0 0 0 0 1l4.14.01-4.81 4.17a.5.5 0 0 0 -.14.57l2.65 6.38-6.07-3.72a.5.5 0 0 0 -.52 0l-6.08 3.72 2.65-6.37a.5.5 0 0 0 -.13-.57l-4.75-4.18h5.75a.5.5 0 0 0 .46-.3l2.37-5.37 1.58 3.57a.5.5 0 0 0 .91-.41l-1.72-3.88a.8.8 0 0 0 -1.56-.01l-2.38 5.39h-5.9a.83.83 0 0 0 -.87.48.85.85 0 0 0 .32.96l4.85 4.25-2.78 6.67a.81.81 0 0 0 .16.98.66.66 0 0 0 .43.15 1.1 1.1 0 0 0 .56-.18l6.37-3.91 6.38 3.92a.81.81 0 0 0 .99.03c.15-.12.37-.41.15-1l-2.77-6.66 4.92-4.26a.84.84 0 0 0 .31-.95zm-.78.53h-.01" fill="#484848"></path><path d="m11 21.5a.5.5 0 1 1 -.5-.5.5.5 0 0 1 .5.5zm-3.5-15.5a.5.5 0 1 0 .5.5.5.5 0 0 0 -.5-.5zm15 10h-.5v-.5a.5.5 0 0 0 -1 0v .5h-.5a.5.5 0 0 0 0 1h .5v.5a.5.5 0 0 0 1 0v-.5h.5a.5.5 0 0 0 0-1zm-15-13h-.5v-.5a.5.5 0 0 0 -1 0v .5h-.5a.5.5 0 0 0 0 1h .5v.5a.5.5 0 0 0 1 0v-.5h.5a.5.5 0 0 0 0-1zm10.22 7.54a.84.84 0 0 0 -.17-.02q-.28-.01-3.19 0a .6.6 0 0 1 -.55-.35l-1.5-3.23a.42.42 0 0 0 -.75 0l-1.81 4.14a2.92 2.92 0 0 0 4.12 3.72l.46-.26 3.49-2.99.16-.18a.5.5 0 0 0 -.26-.82z"></path></svg>
+    </span>
+    <span>United States homes were rated 4.8 out of 5 stars with 42,500,000+ reviews</span>
+    <div>
+      <div>
         <div>
-          <span>Lorem</span>
-          <span>7h ago</span>
+          <img src="https://a0.muscache.com/im/pictures/13114457/65b2fd17_original.jpg?aki_policy=large" alt="image">
         </div>
-      </div>
-      <div class="col-3">
-        <img src="https://static01.nyt.com/images/2019/10/17/smarter-living/00wc-tinykitchen/00wc-tinykitchen-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
         <div>
-          <span>Lorem</span>
-          <span>7h ago</span>
+          <span>Rating Stars</span>
         </div>
-      </div>
-      <div class="col-3">
-        <img src="https://static01.nyt.com/images/2019/10/17/smarter-living/00wc-tinykitchen/00wc-tinykitchen-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
         <div>
-          <span>Lorem</span>
-          <span>7h ago</span>
+          <p>
+            We didn't get a chance to meet Sky, but his place was lovely- very clean and comfortable with lots of great books to read! Definitely 
+          </p>
         </div>
-      </div>
-      <div class="col-3">
-        <img src="https://static01.nyt.com/images/2019/10/17/smarter-living/00wc-tinykitchen/00wc-tinykitchen-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
         <div>
-          <span>Lorem</span>
-          <span>7h ago</span>
-        </div>
-      </div>
-    </div>
-    <hr><hr>
-    <h3>Features</h3>
-    <div class="row">
-      <div class="col-8">
-        <figure>
-          <img src="https://static01.nyt.com/images/2019/10/24/t-magazine/24tmag-rodriguez-slide-7YQ0/24tmag-rodriguez-slide-7YQ0-threeByTwoMediumAt2X.jpg?quality=75&auto=webp&disable=upscale&width=1100" alt="image">
-        </figure>
-        <div>
-          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repellat culpa beatae expedita non quam facere, consectetur earum, voluptatem voluptatum nobis quas omnis laboriosam aspernatur. Eaque ipsam alias odio suscipit!</p>
+          <div>photo</div>
           <div>
-            <span>T Magazine</span>
-            <span>4h ago</span>
+            <span>Name</span><span>Location</span>
           </div>
         </div>
       </div>
-      <div class="col-4">
-        <div class="row">
-          <div class="col-6">
-            <figure>
-              <img src="https://static01.nyt.com/images/2019/10/24/t-magazine/24tmag-rodriguez-slide-7YQ0/24tmag-rodriguez-slide-7YQ0-threeByTwoMediumAt2X.jpg?quality=75&auto=webp&disable=upscale&width=1100" alt="image">
-            </figure>
-            <div>
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repellat culpa beatae expedita non quam facere, consectetur earum, voluptatem voluptatum nobis quas omnis laboriosam aspernatur. Eaque ipsam alias odio suscipit!</p>
-              <div>
-                <span>T Magazine</span>
-                <span>4h ago</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <figure>
-              <img src="https://static01.nyt.com/images/2019/10/24/t-magazine/24tmag-rodriguez-slide-7YQ0/24tmag-rodriguez-slide-7YQ0-threeByTwoMediumAt2X.jpg?quality=75&auto=webp&disable=upscale&width=1100" alt="image">
-            </figure>
-            <div>
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repellat culpa beatae expedita non quam facere, consectetur earum, voluptatem voluptatum nobis quas omnis laboriosam aspernatur. Eaque ipsam alias odio suscipit!</p>
-              <div>
-                <span>T Magazine</span>
-                <span>4h ago</span>
-              </div>
-            </div>
+      <div>
+        <div>
+          <img src="https://a0.muscache.com/im/pictures/13114457/65b2fd17_original.jpg?aki_policy=large" alt="image">
+        </div>
+        <div>
+          <span>Rating Stars</span>
+        </div>
+        <div>
+          <p>
+            We didn't get a chance to meet Sky, but his place was lovely- very clean and comfortable with lots of great books to read! Definitely 
+          </p>
+        </div>
+        <div>
+          <div>photo</div>
+          <div>
+            <span>Name</span><span>Location</span>
           </div>
         </div>
-        <div class="row">
-          <div class="col-6">
-            <figure>
-              <img src="https://static01.nyt.com/images/2019/10/24/t-magazine/24tmag-rodriguez-slide-7YQ0/24tmag-rodriguez-slide-7YQ0-threeByTwoMediumAt2X.jpg?quality=75&auto=webp&disable=upscale&width=1100" alt="image">
-            </figure>
-            <div>
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repellat culpa beatae expedita non quam facere, consectetur earum, voluptatem voluptatum nobis quas omnis laboriosam aspernatur. Eaque ipsam alias odio suscipit!</p>
-              <div>
-                <span>T Magazine</span>
-                <span>4h ago</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <figure>
-              <img src="https://static01.nyt.com/images/2019/10/24/t-magazine/24tmag-rodriguez-slide-7YQ0/24tmag-rodriguez-slide-7YQ0-threeByTwoMediumAt2X.jpg?quality=75&auto=webp&disable=upscale&width=1100" alt="image">
-            </figure>
-            <div>
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repellat culpa beatae expedita non quam facere, consectetur earum, voluptatem voluptatum nobis quas omnis laboriosam aspernatur. Eaque ipsam alias odio suscipit!</p>
-              <div>
-                <span>T Magazine</span>
-                <span>4h ago</span>
-              </div>
-            </div>
+      </div>
+      <div>
+        <div>
+          <img src="https://a0.muscache.com/im/pictures/13114457/65b2fd17_original.jpg?aki_policy=large" alt="image">
+        </div>
+        <div>
+          <span>Rating Stars</span>
+        </div>
+        <div>
+          <p>
+            We didn't get a chance to meet Sky, but his place was lovely- very clean and comfortable with lots of great books to read! Definitely 
+          </p>
+        </div>
+        <div>
+          <div>photo</div>
+          <div>
+            <span>Name</span><span>Location</span>
           </div>
         </div>
       </div>
     </div>
-    <hr><hr>
-    <h3>Science & Technology</h3>
-    <div class="row">
-      <div class="col-7">
-        <div class="row">
-          <div class="col-6">
-            <figure>
-              <img src="https://static01.nyt.com/images/2019/10/24/t-magazine/24tmag-rodriguez-slide-7YQ0/24tmag-rodriguez-slide-7YQ0-threeByTwoMediumAt2X.jpg?quality=75&auto=webp&disable=upscale&width=1100" alt="image">
-            </figure>
-            <div>
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repellat culpa beatae expedita non quam facere, consectetur earum, voluptatem voluptatum nobis quas omnis laboriosam aspernatur. Eaque ipsam alias odio suscipit!</p>
-              <div>
-                <span>T Magazine</span>
-                <span>4h ago</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <figure>
-              <img src="https://static01.nyt.com/images/2019/10/24/t-magazine/24tmag-rodriguez-slide-7YQ0/24tmag-rodriguez-slide-7YQ0-threeByTwoMediumAt2X.jpg?quality=75&auto=webp&disable=upscale&width=1100" alt="image">
-            </figure>
-            <div>
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repellat culpa beatae expedita non quam facere, consectetur earum, voluptatem voluptatum nobis quas omnis laboriosam aspernatur. Eaque ipsam alias odio suscipit!</p>
-              <div>
-                <span>T Magazine</span>
-                <span>4h ago</span>
-              </div>
-            </div>
-          </div>
-        </div>
+    <h2>Traveling with Airbnb</h2>
+    <hr>
+    <div>
+      <div>
+        <svg style="height:40px;width:40px;display:block;overflow:visible" viewBox="0 0 24 24" fill="#60B6B5" fill-opacity="0" stroke="#60B6B5" stroke-width="1" focusable="false" aria-hidden="true" role="presentation" stroke-linecap="round" stroke-linejoin="round"><path d="m17.5 2.9c-2.1 0-4.1 1.3-5.4 2.8-1.6-1.6-3.8-3.2-6.2-2.7-1.5.2-2.9 1.2-3.6 2.6-2.3 4.1 1 8.3 3.9 11.1 1.4 1.3 2.8 2.5 4.3 3.6.4.3 1.1.9 1.6.9s1.2-.6 1.6-.9c3.2-2.3 6.6-5.1 8.2-8.8 1.5-3.4 0-8.6-4.4-8.6" stroke-linejoin="round"></path></svg>
       </div>
-      <div class="col-5">
-        <div class="row">
-          <div class="col-6">
-            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aliquam veniam, ea suscipit animi esse quaerat illum magni et maxime, in laborum vero consequatur, modi tenetur error perferendis accusamus explicabo?</p>
-            <div>
-              <span>lorem</span>
-              <span>2h ago</span>
-            </div>
-          </div>
-          <div class="col-6">
-            <img src="https://static01.nyt.com/images/2019/10/25/sports/24nba-rocketsowner1/merlin_162993657_9127e1b9-240d-41ff-8ae4-dfe81712e508-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-6">
-            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aliquam veniam, ea suscipit animi esse quaerat illum magni et maxime, in laborum vero consequatur, modi tenetur error perferendis accusamus explicabo?</p>
-            <div>
-              <span>lorem</span>
-              <span>2h ago</span>
-            </div>
-          </div>
-          <div class="col-6">
-            <img src="https://static01.nyt.com/images/2019/10/25/sports/24nba-rocketsowner1/merlin_162993657_9127e1b9-240d-41ff-8ae4-dfe81712e508-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          </div>
-        </div>
+      <div>
+        <h3>24/7 customer support</h3>
+        <p>
+          Day or night, we’re here for you. Talk to our support team from anywhere in the world, any hour of day.
+        </p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-10">
-        <hr><hr>
-        <h3>Most Popular <i class="fa fa-angle-right"></i></h3>
-        <div class="row">
-          <div class="col-3">
-            <figure>
-                <img src="https://static01.nyt.com/images/2019/10/24/t-magazine/24tmag-rodriguez-slide-7YQ0/24tmag-rodriguez-slide-7YQ0-threeByTwoMediumAt2X.jpg?quality=75&auto=webp&disable=upscale&width=1100" alt="image">
-              </figure>
-              <div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repellat culpa beatae expedita non quam facere, consectetur earum, voluptatem voluptatum nobis quas omnis laboriosam aspernatur. Eaque ipsam alias odio suscipit!</p>
-                <div>
-                  <span>T Magazine</span>
-                  <span>4h ago</span>
-                </div>
-              </div>
-          </div>
-          <div class="col-3">
-            <figure>
-                <img src="https://static01.nyt.com/images/2019/10/24/t-magazine/24tmag-rodriguez-slide-7YQ0/24tmag-rodriguez-slide-7YQ0-threeByTwoMediumAt2X.jpg?quality=75&auto=webp&disable=upscale&width=1100" alt="image">
-              </figure>
-              <div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repellat culpa beatae expedita non quam facere, consectetur earum, voluptatem voluptatum nobis quas omnis laboriosam aspernatur. Eaque ipsam alias odio suscipit!</p>
-                <div>
-                  <span>T Magazine</span>
-                  <span>4h ago</span>
-                </div>
-              </div>
-          </div>
-          <div class="col-3">
-            <figure>
-                <img src="https://static01.nyt.com/images/2019/10/24/t-magazine/24tmag-rodriguez-slide-7YQ0/24tmag-rodriguez-slide-7YQ0-threeByTwoMediumAt2X.jpg?quality=75&auto=webp&disable=upscale&width=1100" alt="image">
-              </figure>
-              <div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repellat culpa beatae expedita non quam facere, consectetur earum, voluptatem voluptatum nobis quas omnis laboriosam aspernatur. Eaque ipsam alias odio suscipit!</p>
-                <div>
-                  <span>T Magazine</span>
-                  <span>4h ago</span>
-                </div>
-              </div>
-          </div>
-          <div class="col-3">
-            <figure>
-                <img src="https://static01.nyt.com/images/2019/10/24/t-magazine/24tmag-rodriguez-slide-7YQ0/24tmag-rodriguez-slide-7YQ0-threeByTwoMediumAt2X.jpg?quality=75&auto=webp&disable=upscale&width=1100" alt="image">
-              </figure>
-              <div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repellat culpa beatae expedita non quam facere, consectetur earum, voluptatem voluptatum nobis quas omnis laboriosam aspernatur. Eaque ipsam alias odio suscipit!</p>
-                <div>
-                  <span>T Magazine</span>
-                  <span>4h ago</span>
-                </div>
-              </div>
-          </div>
-        </div>
+    <div>
+      <div>
+        <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:40px;width:40px;display:block;fill:#60B6B5"><path d="m23.57 11.4-1.75-1.76-3.85-3.87-1.78-1.79-2.7-2.71-.82-.83-.22-.23-.06-.06c-.22-.22-.53-.22-.73-.02l-1.75 1.76-3.85 3.87-3.85 3.87-1.75 1.76a1.49 1.49 0 0 0 -.44 1.05v.01c0 .38.15.77.44 1.06l.55.55a1.49 1.49 0 0 0 2.01.08v8.4c0 .81.68 1.45 1.5 1.45h15c .82 0 1.5-.65 1.5-1.45v-8.4c.59.49 1.45.47 2.01-.08l.55-.55c.29-.29.44-.68.44-1.06v-.01c0-.38-.14-.77-.44-1.06zm-3.57 11.16c0 .24-.22.45-.5.45h-15c-.28 0-.5-.21-.5-.45v-9.36l8-7.99 8 7.99zm2.85-9.74-.55.55c-.2.2-.52.2-.71.01l-9.24-9.22a.5.5 0 0 0 -.71 0l-9.24 9.22a.5.5 0 0 1 -.71-.01l-.55-.55a.5.5 0 0 1 -.01-.71l1.75-1.76 3.85-3.87 3.85-3.87 1.4-1.4.77.77 2.7 2.71 1.78 1.79 3.85 3.87 1.75 1.76a.51.51 0 0 1 -.01.71z" fill-rule="evenodd"></path></svg>
       </div>
-      <div class="col-2">
-        <hr><hr>
-        <h3>Play <i class="fa fa-angle-right"></i></h3>
-        <h2>Lorem ipsum.</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repellat culpa beatae expedita non quam facere, consectetur earum, voluptatem voluptatum nobis quas omnis laboriosam aspernatur. Eaque ipsam alias odio suscipit!</p>
-        <hr>
-        <h2>Lorem ipsum.</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repellat culpa beatae expedita non quam facere, consectetur earum, voluptatem voluptatum nobis quas omnis laboriosam aspernatur. Eaque ipsam alias odio suscipit!</p>
+      <div>
+        <h3>Global hospitality standards</h3>
+        <p>
+          Guests review their hosts after each stay. All hosts must maintain a minimum rating and our hospitality standards to be on Airbnb.
+        </p>
+      </div>
+    </div>
+    <div>
+      <div>
+        <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:40px;width:40px;display:block;fill:#60B6B5"><path d="m15.37 13.54-.01.01a.53.53 0 0 0 .01-.01m-.37 9.46h-11.5c-.28 0-.9-.22-1.38-.58-.71-.52-1.12-1.31-1.12-2.42 0-.04 0-.07.01-.11.09-1.1 1.59-2.44 4.02-3.79a33.14 33.14 0 0 1 2.9-1.42 35.57 35.57 0 0 1 1.31-.54c.63-.26.71-.95.18-1.35a4.55 4.55 0 0 1 -.38-.31 7.1 7.1 0 0 1 -.84-.9c-.73-.92-1.17-1.96-1.2-3.09v-2.99c.07-2.36 2.38-4.5 5.04-4.5 2.67 0 4.96 2.14 4.96 4.5v3c0 1.13-.43 2.17-1.15 3.11a7.35 7.35 0 0 1 -1.09 1.13l-.08.07c-.02.02-.02.02-.05.05s-.03.03-.09.14c-.05.47-.05.47.46.7a.49.49 0 0 0 .36-.15l.06-.05a8.32 8.32 0 0 0 1.23-1.28c.84-1.1 1.35-2.35 1.35-3.72v-3c0-2.92-2.75-5.5-5.96-5.5-3.2 0-5.96 2.56-6.04 5.49v3.01c.03 1.38.56 2.62 1.42 3.71.31.39.63.73.96 1.03.06.05.1.08.15.12a34.28 34.28 0 0 0 -3.98 1.87c-2.73 1.51-4.41 3.02-4.54 4.58a2.41 2.41 0 0 0 -.01.19c0 2.55 1.91 3.99 3.5 4h11.5a.5.5 0 1 0 0-1m7.67-4.22c-.36.74-.97 1.55-1.78 2.38a20.33 20.33 0 0 1 -1.89 1.71 19.94 19.94 0 0 1 -1.89-1.71c-.81-.83-1.42-1.64-1.78-2.38-.22-.45-.33-.86-.33-1.23 0-.99.61-1.56 1.43-1.56.7 0 1.55.53 2.18 1.31a.5.5 0 0 0 .78 0c .63-.78 1.48-1.31 2.18-1.31.82 0 1.43.57 1.43 1.56 0 .36-.11.77-.33 1.23m-1.1-3.78c-.89 0-1.82.5-2.57 1.25-.75-.76-1.68-1.25-2.57-1.25-1.36 0-2.43 1.01-2.43 2.56 0 .53.15 1.08.43 1.66.41.85 1.09 1.74 1.96 2.64a21.09 21.09 0 0 0 2.31 2.05.5.5 0 0 0 .6 0 20.91 20.91 0 0 0 2.31-2.05c.87-.9 1.55-1.79 1.96-2.64.28-.58.43-1.13.43-1.66 0-1.55-1.07-2.56-2.43-2.56" fill-rule="evenodd"></path></svg>
+      </div>
+      <div>
+        <h3>5-star hosts</h3>
+        <p>From fresh-pressed sheets to tips on where to get the best brunch, our hosts are full of local hospitality.</p>
       </div>
     </div>
     <hr>
+    <h2>Just booked in the United States</h2>
+    <div>
+      <div>
+        <img src="https://a0.muscache.com/im/pictures/812e040f-6f6f-4cae-ad67-66c050b57c1f.jpg?aki_policy=large" alt="image">
+      </div>
+      <div>
+        <span>ENTIRE HOUSE · JOSHUA TREE</span>
+        <h3>The Joshua Tree House</h3>
+        <span>ZAR4,168 ZAR</span><span>/night</span>
+        <div>
+          <span>Stars 467</span><span>Superhost</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img src="https://a0.muscache.com/im/pictures/812e040f-6f6f-4cae-ad67-66c050b57c1f.jpg?aki_policy=large" alt="image">
+      </div>
+      <div>
+        <span>ENTIRE HOUSE · JOSHUA TREE</span>
+        <h3>The Joshua Tree House</h3>
+        <span>ZAR4,168 ZAR</span><span>/night</span>
+        <div>
+          <span>Stars 467</span><span>Superhost</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img src="https://a0.muscache.com/im/pictures/812e040f-6f6f-4cae-ad67-66c050b57c1f.jpg?aki_policy=large" alt="image">
+      </div>
+      <div>
+        <span>ENTIRE HOUSE · JOSHUA TREE</span>
+        <h3>The Joshua Tree House</h3>
+        <span>ZAR4,168 ZAR</span><span>/night</span>
+        <div>
+          <span>Stars 467</span><span>Superhost</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img src="https://a0.muscache.com/im/pictures/812e040f-6f6f-4cae-ad67-66c050b57c1f.jpg?aki_policy=large" alt="image">
+      </div>
+      <div>
+        <span>ENTIRE HOUSE · JOSHUA TREE</span>
+        <h3>The Joshua Tree House</h3>
+        <span>ZAR4,168 ZAR</span><span>/night</span>
+        <div>
+          <span>Stars 467</span><span>Superhost</span>
+        </div>
+      </div>
+    </div>
+    <h3>
+      Show all (22,000+) 
+      <span>
+          <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height:10px;width:10px;fill:currentColor"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg>
+      </span>
+    </h3>
+    <h2>When are you traveling?</h2>
+    <p>Add dates for updated pricing and availability.</p>
+    <button>Add dates</button>
+  </div>
+  <hr>
+  <footer class="container">
+    <div>
+      <div>
+        <div>Airbnb</div>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Diversity & Belonging</a></li>
+        </ul>
+      </div>
+      <div>
+        <div>Airbnb</div>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Diversity & Belonging</a></li>
+        </ul>
+      </div>
+      <div>
+        <div>Airbnb</div>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Diversity & Belonging</a></li>
+        </ul>
+      </div>
+      <div>
+        <div>Airbnb</div>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Diversity & Belonging</a></li>
+        </ul>
+      </div>
+    </div>
     <hr>
-
-    <!--News Section------------------------------------------->
-
-    <h3>News</h3>
-    <div class="row">
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!--OPINION SECTION------------------------------------------------------------------------------------>
-
-    <h3>OPINION</h3>
-    <div class="row">
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    
-
-    <!-- ARTS SECTION -->
-
-    <h3>ARTS</h3>
-    <div class="row">
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!--LIVING SECTION-->
-
-    <h3>LIVING</h3>
-    <div class="row">
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-2">
-        <h3>World News</h3>
-        <div>
-          <img src="https://static01.nyt.com/images/2019/10/22/world/xxukrainewar1-promo/xxukrainewar1-promo-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400" alt="image">
-          <ul>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-            <li>
-              <p>The Cost of Trump’s Aid Freeze in the Trenches of Ukraine’s War</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </main>
-  <hr>
-  <hr>
-  <footer>
-    <div class="row">
-      <div class="col-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="css-oylsik" viewBox="0 0 184 25" fill="#000"><path d="M13.8 2.9c0-2-1.9-2.5-3.4-2.5v.3c.9 0 1.6.3 1.6 1 0 .4-.3 1-1.2 1-.7 0-2.2-.4-3.3-.8C6.2 1.4 5 1 4 1 2 1 .6 2.5.6 4.2c0 1.5 1.1 2 1.5 2.2l.1-.2c-.2-.2-.5-.4-.5-1 0-.4.4-1.1 1.4-1.1.9 0 2.1.4 3.7.9 1.4.4 2.9.7 3.7.8v3.1L9 10.2v.1l1.5 1.3v4.3c-.8.5-1.7.6-2.5.6-1.5 0-2.8-.4-3.9-1.6l4.1-2V6l-5 2.2C3.6 6.9 4.7 6 5.8 5.4l-.1-.3c-3 .8-5.7 3.6-5.7 7 0 4 3.3 7 7 7 4 0 6.6-3.2 6.6-6.5h-.2c-.6 1.3-1.5 2.5-2.6 3.1v-4.1l1.6-1.3v-.1l-1.6-1.3V5.8c1.5 0 3-1 3-2.9zm-8.7 11l-1.2.6c-.7-.9-1.1-2.1-1.1-3.8 0-.7 0-1.5.2-2.1l2.1-.9v6.2zm10.6 2.3l-1.3 1 .2.2.6-.5 2.2 2 3-2-.1-.2-.8.5-1-1V9.4l.8-.6 1.7 1.4v6.1c0 3.8-.8 4.4-2.5 5v.3c2.8.1 5.4-.8 5.4-5.7V9.3l.9-.7-.2-.2-.8.6-2.5-2.1L18.5 9V.8h-.2l-3.5 2.4v.2c.4.2 1 .4 1 1.5l-.1 11.3zM34 15.1L31.5 17 29 15v-1.2l4.7-3.2v-.1l-2.4-3.6-5.2 2.8v6.6l-1 .8.2.2.9-.7 3.4 2.5 4.5-3.6-.1-.4zm-5-1.7V8.5l.2-.1 2.2 3.5-2.4 1.5zM53.1 2c0-.3-.1-.6-.2-.9h-.2c-.3.8-.7 1.2-1.7 1.2-.9 0-1.5-.5-1.9-.9l-2.9 3.3.2.2 1-.9c.6.5 1.1.9 2.5 1v8.3L44 3.2c-.5-.8-1.2-1.9-2.6-1.9-1.6 0-3 1.4-2.8 3.6h.3c.1-.6.4-1.3 1.1-1.3.5 0 1 .5 1.3 1v3.3c-1.8 0-3 .8-3 2.3 0 .8.4 2 1.6 2.3v-.2c-.2-.2-.3-.4-.3-.7 0-.5.4-.9 1.1-.9h.5v4.2c-2.1 0-3.8 1.2-3.8 3.2 0 1.9 1.6 2.8 3.4 2.7v-.2c-1.1-.1-1.6-.6-1.6-1.3 0-.9.6-1.3 1.4-1.3.8 0 1.5.5 2 1.1l2.9-3.2-.2-.2-.7.8c-1.1-1-1.7-1.3-3-1.5V5l8 14h.6V5c1.5-.1 2.9-1.3 2.9-3zm7.3 13.1L57.9 17l-2.5-2v-1.2l4.7-3.2v-.1l-2.4-3.6-5.2 2.8v6.6l-1 .8.2.2.9-.7 3.4 2.5 4.5-3.6-.1-.4zm-5-1.7V8.5l.2-.1 2.2 3.5-2.4 1.5zM76.7 8l-.7.5-1.9-1.6-2.2 2 .9.9v7.5l-2.4-1.5V9.6l.8-.5-2.3-2.2-2.2 2 .9.9V17l-.3.2-2.1-1.5v-6c0-1.4-.7-1.8-1.5-2.3-.7-.5-1.1-.8-1.1-1.5 0-.6.6-.9.9-1.1v-.2c-.8 0-2.9.8-2.9 2.7 0 1 .5 1.4 1 1.9s1 .9 1 1.8v5.8l-1.1.8.2.2 1-.8 2.3 2 2.5-1.7 2.8 1.7 5.3-3.1V9.2l1.3-1-.2-.2zm18.6-5.5l-1 .9-2.2-2-3.3 2.4V1.6h-.3l.1 16.2c-.3 0-1.2-.2-1.9-.4l-.2-13.5c0-1-.7-2.4-2.5-2.4s-3 1.4-3 2.8h.3c.1-.6.4-1.1 1-1.1s1.1.4 1.1 1.7v3.9c-1.8.1-2.9 1.1-2.9 2.4 0 .8.4 2 1.6 2V13c-.4-.2-.5-.5-.5-.7 0-.6.5-.8 1.3-.8h.4v6.2c-1.5.5-2.1 1.6-2.1 2.8 0 1.7 1.3 2.9 3.3 2.9 1.4 0 2.6-.2 3.8-.5 1-.2 2.3-.5 2.9-.5.8 0 1.1.4 1.1.9 0 .7-.3 1-.7 1.1v.2c1.6-.3 2.6-1.3 2.6-2.8s-1.5-2.4-3.1-2.4c-.8 0-2.5.3-3.7.5-1.4.3-2.8.5-3.2.5-.7 0-1.5-.3-1.5-1.3 0-.8.7-1.5 2.4-1.5.9 0 2 .1 3.1.4 1.2.3 2.3.6 3.3.6 1.5 0 2.8-.5 2.8-2.6V3.7l1.2-1-.2-.2zm-4.1 6.1c-.3.3-.7.6-1.2.6s-1-.3-1.2-.6V4.2l1-.7 1.4 1.3v3.8zm0 3c-.2-.2-.7-.5-1.2-.5s-1 .3-1.2.5V9c.2.2.7.5 1.2.5s1-.3 1.2-.5v2.6zm0 4.7c0 .8-.5 1.6-1.6 1.6h-.8V12c.2-.2.7-.5 1.2-.5s.9.3 1.2.5v4.3zm13.7-7.1l-3.2-2.3-4.9 2.8v6.5l-1 .8.1.2.8-.6 3.2 2.4 5-3V9.2zm-5.4 6.3V8.3l2.5 1.8v7.1l-2.5-1.7zm14.9-8.4h-.2c-.3.2-.6.4-.9.4-.4 0-.9-.2-1.1-.5h-.2l-1.7 1.9-1.7-1.9-3 2 .1.2.8-.5 1 1.1v6.3l-1.3 1 .2.2.6-.5 2.4 2 3.1-2.1-.1-.2-.9.5-1.2-1V9c.5.5 1.1 1 1.8 1 1.4.1 2.2-1.3 2.3-2.9zm12 9.6L123 19l-4.6-7 3.3-5.1h.2c.4.4 1 .8 1.7.8s1.2-.4 1.5-.8h.2c-.1 2-1.5 3.2-2.5 3.2s-1.5-.5-2.1-.8l-.3.5 5 7.4 1-.6v.1zm-11-.5l-1.3 1 .2.2.6-.5 2.2 2 3-2-.2-.2-.8.5-1-1V.8h-.1l-3.6 2.4v.2c.4.2 1 .3 1 1.5v11.3zM143 2.9c0-2-1.9-2.5-3.4-2.5v.3c.9 0 1.6.3 1.6 1 0 .4-.3 1-1.2 1-.7 0-2.2-.4-3.3-.8-1.3-.4-2.5-.8-3.5-.8-2 0-3.4 1.5-3.4 3.2 0 1.5 1.1 2 1.5 2.2l.1-.2c-.3-.2-.6-.4-.6-1 0-.4.4-1.1 1.4-1.1.9 0 2.1.4 3.7.9 1.4.4 2.9.7 3.7.8V9l-1.5 1.3v.1l1.5 1.3V16c-.8.5-1.7.6-2.5.6-1.5 0-2.8-.4-3.9-1.6l4.1-2V6l-5 2.2c.5-1.3 1.6-2.2 2.6-2.9l-.1-.2c-3 .8-5.7 3.5-5.7 6.9 0 4 3.3 7 7 7 4 0 6.6-3.2 6.6-6.5h-.2c-.6 1.3-1.5 2.5-2.6 3.1v-4.1l1.6-1.3v-.1L140 8.8v-3c1.5 0 3-1 3-2.9zm-8.7 11l-1.2.6c-.7-.9-1.1-2.1-1.1-3.8 0-.7.1-1.5.3-2.1l2.1-.9-.1 6.2zm12.2-12h-.1l-2 1.7v.1l1.7 1.9h.2l2-1.7v-.1l-1.8-1.9zm3 14.8l-.8.5-1-1V9.3l1-.7-.2-.2-.7.6-1.8-2.1-2.9 2 .2.3.7-.5.9 1.1v6.5l-1.3 1 .1.2.7-.5 2.2 2 3-2-.1-.3zm16.7-.1l-.7.5-1.1-1V9.3l1-.8-.2-.2-.8.7-2.3-2.1-3 2.1-2.3-2.1L154 9l-1.8-2.1-2.9 2 .1.3.7-.5 1 1.1v6.5l-.8.8 2.3 1.9 2.2-2-.9-.9V9.3l.9-.6 1.5 1.4v6l-.8.8 2.3 1.9 2.2-2-.9-.9V9.3l.8-.5 1.6 1.4v6l-.7.7 2.3 2.1 3.1-2.1v-.3zm8.7-1.5l-2.5 1.9-2.5-2v-1.2l4.7-3.2v-.1l-2.4-3.6-5.2 2.8v6.8l3.5 2.5 4.5-3.6-.1-.3zm-5-1.7V8.5l.2-.1 2.2 3.5-2.4 1.5zm14.1-.9l-1.9-1.5c1.3-1.1 1.8-2.6 1.8-3.6v-.6h-.2c-.2.5-.6 1-1.4 1-.8 0-1.3-.4-1.8-1L176 9.3v3.6l1.7 1.3c-1.7 1.5-2 2.5-2 3.3 0 1 .5 1.7 1.3 2l.1-.2c-.2-.2-.4-.3-.4-.8 0-.3.4-.8 1.2-.8 1 0 1.6.7 1.9 1l4.3-2.6v-3.6h-.1zm-1.1-3c-.7 1.2-2.2 2.4-3.1 3l-1.1-.9V8.1c.4 1 1.5 1.8 2.6 1.8.7 0 1.1-.1 1.6-.4zm-1.7 8c-.5-1.1-1.7-1.9-2.9-1.9-.3 0-1.1 0-1.9.5.5-.8 1.8-2.2 3.5-3.2l1.2 1 .1 3.6z"></path></svg>
-      </div>
-      <div class="col-10"></div>
-    </div>
-    <div class="row">
-      <div class="col-2">
-        <h3>NEWS</h3>
-        <ul>
-          <li>
-            <a href="#">home page</a>
-          </li>
-          <li>
-            <a href="#">world</a>
-          </li>
-          <li>
-            <a href="#">U.S.</a>
-          </li>
-          <li>
-            <a href="#">politics</a>
-          </li>
-          <li>
-            <a href="#">Election 2020</a>
-          </li>
-          <li>
-            <a href="#">New York</a>
-          </li>
-          <li>
-            <a href="#">business</a>
-          </li>
-          <li>
-            <a href="#">tech</a>
-          </li>
-          <li>
-            <a href="#">science</a>
-          </li>
-          <li>
-            <a href="#">climate</a>
-          </li>
-          <li>
-            <a href="#">sports</a>
-          </li>
-          <li>
-            <a href="#">obituaries</a>
-          </li>
-          <li>
-            <a href="#">the upshot</a>
-          </li>
-          <li>
-            <a href="#">Español</a>
-          </li>
-          <li>
-            <a href="#">中文网</a>
-          </li>
-          <li>
-            <a href="#">today's paper</a>
-          </li>
-          <li>
-            <a href="#">corrections</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-2">
-        <h3>OPINION</h3>
-        <ul>
-          <li >
-            <a href="#">today's opinion</a>
-          </li>
-          <li>
-            <a href="#">op-ed columnists</a>
-          </li>
-          <li>
-            <a  href="#">editorials</a>
-          </li>
-          <li>
-            <a href="#">op-ed Contributors</a>
-          </li>
-          <li>
-            <a href="#">letters</a>
-          </li>
-          <li>
-            <a href="#">sunday review</a>
-          </li>
-          <li>
-            <a href="#">video: opinion</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-2">
-        <h3>ARTS</h3>
-        <ul>
-          <li>
-            <a href="#">today's arts</a>
-          </li>
-          <li>
-            <a href="#">art &amp; design</a>
-          </li>
-          <li>
-            <a  href="#" >books</a>
-          </li>
-          <li>
-            <a href="#">dance</a>
-          </li>
-          <li>
-            <a href="#">movies</a>
-          </li>
-          <li>
-            <a href="#" >music</a>
-          </li>
-          <li>
-            <a href="#">Pop Culture</a>
-          </li>
-          <li>
-            <a href="#">television</a>
-          </li>
-          <li>
-            <a href="#">theater</a>
-          </li>
-          <li>
-            <a href="#">watching</a>
-          </li>
-          <li>
-            <a href="#">video: arts</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-2">
-        <h3>LIVING</h3>
-        <ul><li><a href="#">automobiles</a></li><li><a href="#">Cooking</a></li><li><a href="#">crossword</a></li><li><a href="#">education</a></li><li><a href="#">food</a></li><li><a href="#">health</a></li><li><a href="#">jobs</a></li><li><a href="#">magazine</a></li><li><a href="#">parenting</a></li><li><a href="#">real estate</a></li><li><a href="#">style</a></li><li><a href="#">t magazine</a></li><li><a href="#">travel</a></li><li><a href="#">love</a></li></ul>
-      </div>
-      <div class="col-2">
-        <h3>MORE</h3>
-        <ul><li><a href="#">Reader Center</a></li><li><a href="#">Wirecutter</a></li><li ><a href="#">Live Events</a></li><li><a href="#">The Learning Network</a></li><li><a href="#">tools &amp; services</a></li><li><a href="#">N.Y.C. events guide</a></li><li><a href="#">multimedia</a></li><li><a  href="#">photography</a></li><li><a href="#">video</a></li><li><a href="#">Newsletters</a></li><li><a href="#">NYT store</a></li><li><a href="#">times journeys</a></li><li><a href="#">manage my account</a></li></ul>
-      </div>
-      <div class="col-2">
-        <h3>SUBSCRIBE</h3>
-        
-      </div>
+    <div>
+      <span><svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1.5em;width:1.5em;display:block;fill:#767676"><path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z"></path></svg></span>
+      <span>© 2019 Airbnb, Inc. All rights reserved.</span>
     </div>
   </footer>
 </body>
