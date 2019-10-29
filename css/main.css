@@ -5,8 +5,11 @@
 
 
 .page-header {
-  background: gray;
-  height: 40vh;
+  background-image: url("https://a0.muscache.com/pictures/a430c412-63bc-45f5-8a13-55647449a0b1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 43.5vh;
 }
 
 .container {
