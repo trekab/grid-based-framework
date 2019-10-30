@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  color: #484848;
+  font-family: 'Delius', cursive;
+  min-width: 35rem;
+}
+
+.page-header {
+  background-image: url("https://a0.muscache.com/pictures/a430c412-63bc-45f5-8a13-55647449a0b1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 45vh;
+  color: white;
+}
+
+hr {
+  height: 1px;
+  color: #f0e5e5;
+  background-color: #f0e5e5;
+  border: none;
+}
+
+i {
+  color: #058886;
+}
+
+.green {
+  color: #058886;
+}
+
+.page-header__button {
+  color: #484848;
+  background: white;
+  border-radius: 0.3rem;
+  border: none;
+  height: 3rem;
+  width: 100%;
+  box-shadow: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.page-header__button--host {
+  background: linear-gradient(to top left, black, transparent);
+  color: white;
+  border: 2px solid white;
+}
+
+.h1 {
+  font-size: 3rem;
+}
+
+input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.3rem;
+  border: 1px lightgrey solid;
+  font-size: 1rem;
+}
+
+.form-search {
+  background: #ff5a5f;
+  color: white;
+  font-weight: bolder;
+}
+
+form select {
+  height: 3rem;
+  background: white;
+  border-radius: 0.3rem;
+}
+
+.container {
+  max-width: 65rem;
+  min-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headshot {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: solid 1px black;
+  background: #5c5a5a;
+}
+
+img {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.fig-caption {
+  font-size: 0.7rem;
+  font-weight: bolder;
+  color: #5c5a5a;
+}
+
+.rating-font {
+  font-size: 0.75rem;
+}
+
+.add-dates__btn {
+  background: #058886;
+  color: white;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  border-radius: 0.25rem;
+  border: none;
+  width: 8rem;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+footer i {
+  color: #484848;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  font-size: 22px !important;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: #5c5a5a;
+}
+
+.footer-title {
+  font-weight: bolder;
+}
