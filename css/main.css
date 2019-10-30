@@ -14,9 +14,16 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 43.5vh;
+  height: 45vh;
   color: white;
   
+}
+
+hr{ 
+  height: 1px;
+  color: #f0e5e5;
+  background-color: #f0e5e5;
+  border: none;
 }
 
 
@@ -24,15 +31,9 @@ i {
   color: #058886;
 }
 
-
-
 .green {
   color: #058886;
 }
-
-/* .page-header__buttons {
-  max-width: 45rem;
-} */
 
 .page-header__button {
   color: #484848;
