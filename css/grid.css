@@ -358,6 +358,10 @@
   padding-top: 5rem;
 }
 
+.pt-10 {
+  padding-top: 10rem;
+}
+
 /* padding bottom */
 .pb-1 {
   padding-bottom: 1rem;
