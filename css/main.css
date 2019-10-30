@@ -1,9 +1,12 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
 }
 
+body {
+  color: #484848;
+  font-family: 'Delius', cursive;
+}
 
 .page-header {
   background-image: url("https://a0.muscache.com/pictures/a430c412-63bc-45f5-8a13-55647449a0b1.jpg");
@@ -13,6 +16,15 @@
   height: 43.5vh;
   color: white;
   
+}
+
+
+i {
+  color: #058886;
+}
+
+.green {
+  color: #058886;
 }
 
 /* .page-header__buttons {
@@ -43,10 +55,41 @@
 
 .container {
   max-width: 65rem;
+  min-width: 25rem;
   margin-left: auto;
   margin-right: auto;
 }
 
+.headshot {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: solid 1px black;
+  background: #5c5a5a;
+}
+
 img {
   width: 100%;
+  border-radius: 2px;
+}
+
+.fig-caption {
+  font-size: 0.7rem;
+  font-weight: bolder;
+  color: #5c5a5a;
+}
+
+.rating-font {
+  font-size: 0.75rem;
+}
+
+.add-dates__btn {
+  background: #058886;
+  color: white;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  border-radius: 0.25rem;
+  border: none;
+  width: 8rem;
 }
