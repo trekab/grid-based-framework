@@ -16,16 +16,14 @@ body {
   background-position: center center;
   height: 45vh;
   color: white;
-  
 }
 
-hr{ 
+hr {
   height: 1px;
   color: #f0e5e5;
   background-color: #f0e5e5;
   border: none;
 }
-
 
 i {
   color: #058886;
@@ -65,7 +63,7 @@ input {
   font-size: 1rem;
 }
 
-.form-search{
+.form-search {
   background: #ff5a5f;
   color: white;
   font-weight: bolder;
