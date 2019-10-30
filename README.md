@@ -7,7 +7,7 @@
 - Contact
 
 ## About the Project
-In this project I will be creating my own grid-based CSS framework and test it by cloning a website.
+In this project I will be creating my own grid-based CSS framework and test it by cloning the [airbnb homepage](airbnb.com).
 
 ### Built With
 - HTML
