@@ -53,6 +53,10 @@ i {
   font-size: 3rem;
 }
 
+input {
+  width: 100%;
+}
+
 .container {
   max-width: 65rem;
   min-width: 25rem;

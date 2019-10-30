@@ -37,21 +37,36 @@
     </div>
   </div>
   <div class="container pt-5">
-    <h2>Book unique homes and experiences</h2>
-    <form action="">
-      <label for="where">WHERE</label>
-      <input type="text" placeholder="Anywhere" id="where">
-      <label for="checkin">CHECK-IN</label>
-      <input type="date" id="checkin">
-      <label for="checkout">CHECK-OUT</label>
-      <input type="date" id="checkout">
-      <label for="guests">GUESTS</label>
-      <select name="guests" id="guests">
-        <option value="one">1 guest</option>
-        <option value="two">2 guests</option>
-        <option value="three">3 guests</option>
-      </select>
-      <input type="submit" value="Search">
+    <h2 class="row col">Book unique homes and experiences</h2>
+    <form class="col">
+      <div class="col col-md-4">
+        <label for="where" class="row">WHERE</label>
+        <input type="text" placeholder="Anywhere" id="where" class="row col-s-12">
+      </div>
+      <div class="col col-md-4 d-flex">
+        <div class="col-s-6 col-md-6">
+          <label for="checkin" class="row">CHECK-IN</label>
+          <input type="date" id="checkin"  class="row col-s-12">
+        </div>
+        <div class="col-s-6 col-md-6">
+          <label for="checkout"  class="row">CHECK-OUT</label>
+          <input type="date" id="checkout"  class="row">
+        </div>
+      </div>
+     <div class="col col-md-4">
+       <div class="row">
+        <label for="guests">GUESTS</label>
+       </div>
+        <div class="row col-s-12 d-flex flex-wrap">
+          <select name="guests" id="guests" class="col-s-12 col-md-8">
+            <option value="one">1 guest</option>
+            <option value="two">2 guests</option>
+            <option value="three">3 guests</option>
+          </select>
+          <input type="submit" value="Search" class="col-s-12 col-md-4">
+        </div>
+     </div>
+      
     </form>
     <h2 class="row col pt-3">What guests are saying about homes in the United States</h2>
     <div class="row col d-flex align-items-center py-1">
