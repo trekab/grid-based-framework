@@ -6,6 +6,7 @@
 body {
   color: #484848;
   font-family: 'Delius', cursive;
+  min-width: 35rem;
 }
 
 .page-header {
@@ -22,6 +23,8 @@ body {
 i {
   color: #058886;
 }
+
+
 
 .green {
   color: #058886;
@@ -112,4 +115,29 @@ img {
   border-radius: 0.25rem;
   border: none;
   width: 8rem;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+footer i {
+  color: #484848;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  font-size: 22px !important;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: #5c5a5a;
+}
+
+.footer-title {
+  font-weight: bolder;
 }
